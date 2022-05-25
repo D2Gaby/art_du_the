@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+    body {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            text-transform: uppercase;
+            overflow-y: hidden;
+        }
+
+        h2,
+        h5 {
+            text-align: center;
+        }
+
+        h2:after {
+            display: block;
+            height: 3px;
+            background-color: darkgreen;
+            width: 100px;
+            content: " ";
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        header {
+            nav {
+                .container-fluid {
+                    justify-content: space-around !important;
+
+                    .navbar-collapse {
+                        flex-grow: 0;
+
+                        .nav-item {
+                            .nav-link:hover {
+                                color: black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        main {
+            #headerimg {
+                background-image: linear-gradient(rgba(0, 242, 96, 0.3),
+                        rgba(7, 117, 230, 0.6)), url("./../images/header.jpg");
+                height: 100vh;
+                color: white;
+                background-position: center;
+                background-size: cover;
+                .row{
+
+                }
+            }
+            .container{
+                .card{height: 45vh !important;}
+            }
+            #couleur {
+                background-color: #ccf6e0;
+            }
+
+            #paralax {
+                background-image: linear-gradient(rgba(0, 242, 96, 0.2),
+                        rgba(7, 117, 230, 0.3)), url("./../images/the-paysage.jpg");
+
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: opacity(750%);
+                text-align: center;
+                color: white;
+
+                h2:after {
+                    background-color: white;
+                }
+                
+                .row {
+
+
+                    .col {
+
+                        .rond {
+                            border-radius: 50%;
+                            height: 50%;
+                        }
+
+                    }
+                }
+            }
+            
+            
+        }
+        footer{
+            text-align: center;
+            color: lightgrey;
+            background-color: black;
+        }
+    }
+}

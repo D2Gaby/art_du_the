@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* body h1,
+* body h2,
+* body h3,
+* body h4,
+* body h5 {
+  text-transform: uppercase;
+  overflow-y: hidden;
+}
+
+* body h2,
+* body h5 {
+  text-align: center;
+}
+
+* body h2:after {
+  display: block;
+  height: 3px;
+  background-color: darkgreen;
+  width: 100px;
+  content: " ";
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+* body header nav .container-fluid {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+* body header nav .container-fluid .navbar-collapse {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+}
+
+* body header nav .container-fluid .navbar-collapse .nav-item .nav-link:hover {
+  color: black;
+}
+
+* body main #headerimg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.3)), to(rgba(7, 117, 230, 0.6))), url("./../images/header.jpg");
+  background-image: linear-gradient(rgba(0, 242, 96, 0.3), rgba(7, 117, 230, 0.6)), url("./../images/header.jpg");
+  height: 100vh;
+  color: white;
+  background-position: center;
+  background-size: cover;
+}
+
+* body main .container .card {
+  height: 45vh !important;
+}
+
+* body main #couleur {
+  background-color: #ccf6e0;
+}
+
+* body main #paralax {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 242, 96, 0.2)), to(rgba(7, 117, 230, 0.3))), url("./../images/the-paysage.jpg");
+  background-image: linear-gradient(rgba(0, 242, 96, 0.2), rgba(7, 117, 230, 0.3)), url("./../images/the-paysage.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: opacity(750%);
+          filter: opacity(750%);
+  text-align: center;
+  color: white;
+}
+
+* body main #paralax h2:after {
+  background-color: white;
+}
+
+* body main #paralax .row .col .rond {
+  border-radius: 50%;
+  height: 50%;
+}
+
+* body footer {
+  text-align: center;
+  color: lightgrey;
+  background-color: black;
+}
+/*# sourceMappingURL=style.css.map */
